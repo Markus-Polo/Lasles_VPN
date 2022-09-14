@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:css": "stylelint --fix '**/*.css'",
+    "lint:css": "stylelint --fix \"**/*.css\"",
     "prettier:check": "prettier --check --write '**/*.(css|html)'",
     "prepare": "husky install"
   },

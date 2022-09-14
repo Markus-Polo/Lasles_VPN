@@ -3,3 +3,6 @@
 *:before {
   border: none;
 }
+body {
+  font-family: rubik, sans-serif;
+}
