@@ -2,7 +2,7 @@
   font-family: icomoon;
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/icomoon.woff?2zfiaf') format('woff');
+  src: url('../fonts/icomoon/icomoon.woff') format('woff');
   font-display: block;
 }
 
