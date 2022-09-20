@@ -7,6 +7,7 @@ button {
   cursor: pointer;
 }
 body {
+  background-color: #fcffff;
   font-family: Rubik, sans-serif;
 }
 ul,
@@ -18,20 +19,19 @@ ol {
 a {
   text-decoration: none;
 }
-.padding-b30 {
+.m-0 {
   margin: 0;
+}
+.pb-30 {
   padding-bottom: 30px;
 }
-.padding-b20 {
-  margin: 0;
+.pb-20 {
   padding-bottom: 20px;
 }
-.padding-b50 {
-  margin: 0;
+.pb-50 {
   padding-bottom: 50px;
 }
-.padding-b60 {
-  margin: 0;
+.pb-60 {
   padding-bottom: 60px;
 }
 .text-center {
@@ -50,6 +50,10 @@ a {
 }
 .plain-text {
   color: #4f5665;
+  line-height: 30px;
+}
+.plain-text-black {
+  color: black;
   line-height: 30px;
 }
 .text-sm {
@@ -85,15 +89,16 @@ a {
   padding: 10px;
   border: 1px solid #f53855;
   border-radius: 50px;
-  background-color: white;
+  background-color: #fcffff;
   color: #f53838;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
 }
 .button-primary:hover {
-  background-color: #fc000046;
-  box-shadow: 0 0 7px #8d0f0f1e;
+  background-color: #f53838;
+  box-shadow: 0 20px 40px #f5383828;
+  color: white;
 }
 .button-primary:active {
   box-shadow: inset 0 0 7px #5e383815;
@@ -147,13 +152,8 @@ a {
   text-decoration: none;
 }
 .main-nav-link:hover {
-  border-radius: 40px;
-  box-shadow: 0 0 15px #ff110038;
   color: #dd2013;
-}
-.main-nav-link:active {
-  box-shadow: inset 0 0 10px #ff11000e;
-  color: #dd2013;
+  text-shadow: 0 0 20px #ff110038;
 }
 .hero-section {
   padding-top: 120px;
@@ -179,8 +179,8 @@ a {
 .stats-icon-wrap {
   align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 55px;
+  width: 56px;
+  height: 56px;
   border-radius: 50px;
   background-color: #ffecec;
   color: #f53838;
@@ -189,7 +189,9 @@ a {
 .stats-content {
   padding-left: 42px;
 }
-.feutures-holder {
+.features-holder {
+  display: flex;
+  justify-content: space-between;
   padding-top: 150px;
 }
 .features-content {
@@ -224,17 +226,17 @@ a {
 .pricing-section {
   padding-top: 80px;
 }
-.stats-list {
+.main-list {
   min-height: 230px;
 }
-.pricing-section-list-item {
+.main-list-item {
   position: relative;
   padding-left: 32px;
   color: #4f5665;
   font-size: 14px;
   line-height: 30px;
 }
-.pricing-section-list-item:before {
+.main-list-item:before {
   content: '\e906';
   position: absolute;
   top: 5px;
@@ -252,7 +254,10 @@ a {
   text-transform: none;
   speak: never;
 }
-.pricing-section-list-wraper {
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 359px;
   min-height: 760px;
   margin-top: 60px;
@@ -261,12 +266,15 @@ a {
   border-radius: 10px;
   background: #fcffff;
 }
-.stats-value {
+.pricing:focus {
+  border: 3px solid #f53838;
+}
+.price {
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
 }
-.stats-key {
+.price-span {
   color: #4f5665;
   font-size: 25px;
   line-height: 30px;
@@ -275,7 +283,7 @@ a {
   padding-top: 120px;
 }
 .testimonials-title-wraper {
-  width: 525px;
+  max-width: 525px;
 }
 .testimonials-box {
   width: 360px;
@@ -286,9 +294,23 @@ a {
   border: 2px solid #ddd;
   border-radius: 10px;
 }
-.star-stile {
+.testimonials-box:focus {
+  border: 3px solid #f53838;
+  background-color: white;
+}
+.testimonial-star {
   padding-left: 11px;
   color: #fea250;
+}
+.scroll-bullet {
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  border-radius: 50px;
+  background-color: #dde0e4;
+}
+.scroll-bullet:hover {
+  background-color: #f53838;
 }
 .button-circle {
   width: 60px;
@@ -296,15 +318,27 @@ a {
   margin-left: 20px;
   border: 2px solid #f53838;
   border-radius: 50px;
-  background-color: white;
+  background-color: #fcffff;
   color: #f53838;
   font-size: 24px;
+}
+.button-circle:hover {
+  background-color: #f53838;
+  box-shadow: 0 0 20px #dd20134b;
+  color: white;
+}
+.button-circle:active {
+  box-shadow: none;
 }
 .subscribe-section {
   padding-top: 88px;
 }
 .subscribe-wraper {
-  min-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
   min-height: 233px;
   padding-right: 97px;
   padding-left: 97px;
@@ -314,11 +348,28 @@ a {
   line-height: 30px;
 }
 .subscribe-hero-box {
-  width: 375px;
+  width: 370px;
 }
 .footer-section {
+  display: flex;
+  justify-content: space-between;
   padding-top: 83px;
+  padding-bottom: 30px;
 }
-.social-networks-box {
+.footer-subscribe-content {
   width: 340px;
+}
+.social-networks {
+  padding-right: 22px;
+  color: #f53838;
+  font-size: 30px;
+}
+.footer-linc {
+  padding-bottom: 10px;
+  color: #4f5665;
+  line-height: 30px;
+}
+.copyright {
+  color: #afb5c0c0;
+  line-height: 30px;
 }
