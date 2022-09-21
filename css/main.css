@@ -34,6 +34,12 @@ a {
 .pb-60 {
   padding-bottom: 60px;
 }
+.pt-80 {
+  padding-top: 80px;
+}
+.pt-88 {
+  padding-top: 88px;
+}
 .text-center {
   text-align: center;
 }
@@ -177,6 +183,7 @@ a {
   line-height: 30px;
 }
 .stats-icon-wrap {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 56px;
@@ -223,9 +230,6 @@ a {
   text-transform: none;
   speak: never;
 }
-.pricing-section {
-  padding-top: 80px;
-}
 .main-list {
   min-height: 230px;
 }
@@ -266,7 +270,7 @@ a {
   border-radius: 10px;
   background: #fcffff;
 }
-.pricing:focus {
+.pricing:hover {
   border: 3px solid #f53838;
 }
 .price {
@@ -294,18 +298,19 @@ a {
   border: 2px solid #ddd;
   border-radius: 10px;
 }
-.testimonials-box:focus {
+.testimonials-box:hover {
   border: 3px solid #f53838;
   background-color: white;
 }
 .testimonial-star {
-  padding-left: 11px;
+  padding-left: 10px;
   color: #fea250;
 }
 .scroll-bullet {
   width: 15px;
   height: 15px;
   margin-left: 15px;
+  border: none;
   border-radius: 50px;
   background-color: #dde0e4;
 }
@@ -313,6 +318,9 @@ a {
   background-color: #f53838;
 }
 .button-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   margin-left: 20px;
@@ -330,9 +338,6 @@ a {
 .button-circle:active {
   box-shadow: none;
 }
-.subscribe-section {
-  padding-top: 88px;
-}
 .subscribe-wraper {
   display: flex;
   align-items: center;
@@ -340,10 +345,10 @@ a {
   width: 100%;
   max-width: 1140px;
   min-height: 233px;
-  padding-right: 97px;
-  padding-left: 97px;
+  padding-right: 98px;
+  padding-left: 98px;
   border-radius: 10px;
-  box-shadow: 0 45px 70px #00000028;
+  box-shadow: 0 46px 70px #00000028;
   font-size: 20px;
   line-height: 30px;
 }
@@ -353,7 +358,7 @@ a {
 .footer-section {
   display: flex;
   justify-content: space-between;
-  padding-top: 83px;
+  padding-top: 84px;
   padding-bottom: 30px;
 }
 .footer-subscribe-content {
@@ -364,7 +369,8 @@ a {
   color: #f53838;
   font-size: 30px;
 }
-.footer-linc {
+.footer-link {
+  display: inline-block;
   padding-bottom: 10px;
   color: #4f5665;
   line-height: 30px;

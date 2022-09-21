@@ -75,7 +75,7 @@
           <div class="stats-wrapper">
             <ul class="d-flex justify-content-between">
               <li class="align-items-center d-flex">
-                <div class="stats-icon-wrap d-flex">
+                <div class="stats-icon-wrap">
                   <span class="icon-sm-user"></span>
                 </div>
                 <div class="stats-content">
@@ -85,7 +85,7 @@
                 </div>
               </li>
               <li class="align-items-center d-flex">
-                <div class="stats-icon-wrap d-flex">
+                <div class="stats-icon-wrap">
                   <span class="icon-location"></span>
                 </div>
                 <div class="stats-content">
@@ -96,7 +96,7 @@
                 </div>
               </li>
               <li class="align-items-center d-flex">
-                <div class="stats-icon-wrap d-flex">
+                <div class="stats-icon-wrap">
                   <span class="icon-bxs-server"></span>
                 </div>
                 <div class="stats-content">
@@ -127,14 +127,14 @@
           </div>
         </div>
       </section>
-      <section class="pricing-section container">
+      <section class="pt-80 container">
         <h2 class="title-2 text-center">Choose Your Plan</h2>
         <p class="plain-text text-center">
           Let's choose the package that is best for you and explore it happily
           and cheerfully.
         </p>
         <div class="d-flex justify-content-between">
-          <div tabindex="0" class="pricing">
+          <div class="pricing">
             <img class="pb-30 m-0" src="images/pricing-free.svg" alt="" />
             <h3 class="text-center title-3 pb-30">Free Plan</h3>
             <ul class="main-list">
@@ -148,7 +148,7 @@
             </div>
             <button class="button-primary">Select</button>
           </div>
-          <div tabindex="0" class="pricing">
+          <div class="pricing">
             <img class="pb-30 m-0" src="images/pricing-standard.svg" alt="" />
             <h3 class="text-center title-3 pb-30">Standard Plan</h3>
             <ul class="main-list">
@@ -164,7 +164,7 @@
             </div>
             <button class="button-primary">Select</button>
           </div>
-          <div tabindex="0" class="pricing">
+          <div class="pricing">
             <img class="pb-30" src="images/pricing-premium.svg" alt="" />
             <h3 class="text-center title-3 pb-30">Premium Plan</h3>
             <ul class="main-list">
@@ -196,7 +196,7 @@
           </div>
         </div>
         <ul class="d-flex justify-content-between pb-50 m-0">
-          <li tabindex="0" class="testimonials-box">
+          <li class="testimonials-box">
             <div class="d-flex justify-content-between align-items-center">
               <img src="images/testimonials-img1.jpg" alt="" />
               <p class="flex-direction-column d-flex">
@@ -214,7 +214,7 @@
               LaslesVPN always the best”.
             </p>
           </li>
-          <li tabindex="0" class="testimonials-box">
+          <li class="testimonials-box">
             <div class="d-flex justify-content-between align-items-center">
               <img src="images/testimonials-img2.jpg" alt="" />
               <p class="flex-direction-column d-flex">
@@ -231,7 +231,7 @@
               high speed.”.
             </p>
           </li>
-          <li tabindex="0" class="testimonials-box">
+          <li class="testimonials-box">
             <div class="d-flex justify-content-between align-items-center">
               <img src="images/testimonials-img3.jpg" alt="" />
               <p class="flex-direction-column d-flex">
@@ -250,12 +250,26 @@
           </li>
         </ul>
         <div class="d-flex justify-content-between align-items-center">
-          <div class="d-flex justify-content-between">
-            <div class="scroll-bullet"></div>
-            <div class="scroll-bullet"></div>
-            <div class="scroll-bullet"></div>
-            <div class="scroll-bullet"></div>
-          </div>
+          <ul
+            aria-label="testimonial scroll"
+            class="d-flex justify-content-between"
+          >
+            <li aria-label="next testimonial">
+              <button class="scroll-bullet"></button>
+            </li>
+            <li aria-label="next testimonial">
+              <button class="scroll-bullet"></button>
+            </li>
+            <li aria-label="next testimonial">
+              <button class="scroll-bullet"></button>
+            </li>
+            <li aria-label="next testimonial">
+              <button class="scroll-bullet"></button>
+            </li>
+            <li aria-label="next testimonial">
+              <button class="scroll-bullet"></button>
+            </li>
+          </ul>
           <div>
             <button class="button-circle">
               <span class="icon-button-left"></span>
@@ -266,7 +280,7 @@
           </div>
         </div>
       </section>
-      <section class="subscribe-section container">
+      <section class="pt-88 container">
         <div class="subscribe-wraper">
           <div class="subscribe-hero-box">
             <h2 class="title-2">Subscribe Now for Get Special Features!</h2>
@@ -288,43 +302,43 @@
           </p>
           <ul class="d-flex">
             <li>
-              <a class="social-networks" href=""
-                ><span class="icon-facesbook"></span
-              ></a>
+              <a class="social-networks" href="">
+                <span class="icon-facesbook"></span>
+              </a>
             </li>
             <li>
-              <a class="social-networks" href=""
-                ><span class="icon-twitter"></span
-              ></a>
+              <a class="social-networks" href="">
+                <span class="icon-twitter"></span>
+              </a>
             </li>
             <li>
-              <a class="social-networks" href=""
-                ><span class="icon-instagram"></span
-              ></a>
+              <a class="social-networks" href="">
+                <span class="icon-instagram"></span>
+              </a>
             </li>
           </ul>
-          <p class="copyright">©2020LaslesVPN</p>
+          <p class="copyright">&#169;2020LaslesVPN</p>
         </div>
         <div>
           <h3>Product</h3>
           <ul>
             <li>
-              <a class="footer-linc" href="">Download </a>
+              <a class="footer-link" href="">Download</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Pricing</a>
+              <a class="footer-link" href="">Pricing</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Locations</a>
+              <a class="footer-link" href="">Locations</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Server</a>
+              <a class="footer-link" href="">Server</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Countries</a>
+              <a class="footer-link" href="">Countries</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Blog</a>
+              <a class="footer-link" href="">Blog</a>
             </li>
           </ul>
         </div>
@@ -332,22 +346,22 @@
           <h3>Engage</h3>
           <ul>
             <li>
-              <a class="footer-linc" href="">LaslesVPN ? </a>
+              <a class="footer-link" href="">LaslesVPN ?</a>
             </li>
             <li>
-              <a class="footer-linc" href="">FAQ</a>
+              <a class="footer-link" href="">FAQ</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Tutorials</a>
+              <a class="footer-link" href="">Tutorials</a>
             </li>
             <li>
-              <a class="footer-linc" href="">About Us</a>
+              <a class="footer-link" href="">About Us</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Privacy Policy</a>
+              <a class="footer-link" href="">Privacy Policy</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Terms of Service</a>
+              <a class="footer-link" href="">Terms of Service</a>
             </li>
           </ul>
         </div>
@@ -355,10 +369,10 @@
           <h3>Earn Money</h3>
           <ul>
             <li>
-              <a class="footer-linc" href="">Affiliate</a>
+              <a class="footer-link" href="">Affiliate</a>
             </li>
             <li>
-              <a class="footer-linc" href="">Become Partner</a>
+              <a class="footer-link" href="">Become Partner</a>
             </li>
           </ul>
         </div>
